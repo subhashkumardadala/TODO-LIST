@@ -1,0 +1,128 @@
+/* Todolist.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5; /* Light background color */
+  font-family: Arial, sans-serif;
+}
+
+.todolist-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the main container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd; /* Light border for softer look */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button styles */
+button.add-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+button.save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+button.edit-btn {
+  background-color: #FFA500; /* Orange color for Edit button */
+  color: white;
+}
+
+button.delete-btn {
+  background-color: #ff4d4d; /* Red color for Delete button */
+  color: white;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #333;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Style for list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.todo-item.completed {
+  background-color: #e0ffe0; /* Light green background for completed items */
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Container for edit and delete buttons */
+.todo-actions {
+  display: flex;
+  gap: 8px; /* Space between Delete and Edit buttons */
+  align-items: center;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.todo-actions .edit-btn, .todo-actions .delete-btn {
+  flex: none; /* Keep each button's size consistent */
+  padding: 6px 10px; /* Smaller padding for a tighter fit */
+}
+
+.title{
+  display:flex;
+  text-align:center;
+  
+
+  
+}
