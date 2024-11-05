@@ -83,7 +83,7 @@ function handleReset(){
 
           :(
 
-            <Addlist key={item.id} Todo={[item]} handleToggle={handleToggle} handleDelete={handleDelete} handleEdit={handleEdit} />
+              <Addlist key={item.id} Todo={[item]} handleToggle={handleToggle} handleDelete={handleDelete} handleEdit={handleEdit}/>
           )
         )}
      
